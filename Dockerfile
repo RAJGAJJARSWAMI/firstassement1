@@ -1,4 +1,6 @@
-FROM ubuntu:18.04
-PULL. /file
-RUN make /file
-CMD python /file/file.py 
+FROM ubuntu 
+MAINTAINER gajjarraj.se@gmail.com
+
+RUN apt-get update 
+RUN apt-get install –y nginx 
+CMD [“echo”,”Image created”]
